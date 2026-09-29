@@ -1,0 +1,41 @@
+{
+  "name": "coursemarket-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Online Course Marketplace Platform — Vue 3 SPA (Vite + Pinia + Tailwind + shadcn-vue)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js"
+  },
+  "dependencies": {
+    "@clerk/clerk-js": "^5.22.0",
+    "@stripe/stripe-js": "^4.8.0",
+    "@supabase/supabase-js": "^2.45.4",
+    "@vueuse/core": "^11.1.0",
+    "@vueuse/motion": "^2.2.6",
+    "axios": "^1.7.7",
+    "chart.js": "^4.4.4",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
+    "lucide-vue-next": "^0.447.0",
+    "pinia": "^2.2.4",
+    "socket.io-client": "^4.8.0",
+    "tailwind-merge": "^2.5.2",
+    "video.js": "^8.17.3",
+    "vue": "^3.5.10",
+    "vue-chartjs": "^5.3.1",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "tailwindcss-animate": "^1.0.7",
+    "vite": "^5.4.8"
+  }
+}

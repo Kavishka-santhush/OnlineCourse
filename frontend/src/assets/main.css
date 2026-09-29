@@ -1,0 +1,68 @@
+@import 'video.js/dist/video-js.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* shadcn-vue design tokens ------------------------------------------------- */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71% 4%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71% 4%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71% 4%;
+    --primary: 243 75% 59%;          /* indigo-600 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 224 71% 4%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 220 14% 96%;
+    --accent-foreground: 224 71% 4%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 243 75% 59%;
+    --radius: 0.65rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 0 0% 98%;
+    --card: 224 71% 6%;
+    --card-foreground: 0 0% 98%;
+    --popover: 224 71% 6%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 234 89% 74%;
+    --primary-foreground: 224 71% 4%;
+    --secondary: 216 12% 16%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 216 12% 16%;
+    --muted-foreground: 217 11% 65%;
+    --accent: 216 12% 18%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 63% 45%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 216 12% 18%;
+    --input: 216 12% 18%;
+    --ring: 234 89% 74%;
+  }
+
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .text-balance { text-wrap: balance; }
+}
+
+/* Video.js theme tweak */
+.video-js { border-radius: 0.5rem; overflow: hidden; }
